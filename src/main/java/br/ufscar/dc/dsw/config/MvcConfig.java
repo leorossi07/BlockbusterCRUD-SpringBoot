@@ -12,6 +12,7 @@ import br.ufscar.dc.dsw.conversor.BigDecimalConversor;
 @ComponentScan(basePackages = "br.ufscar.dc.dsw.config")
 public class MvcConfig implements WebMvcConfigurer {
     
+    @SuppressWarnings("null")
     @Override
     public void addFormatters(FormatterRegistry registry) {
         registry.addConverter(new BigDecimalConversor());

@@ -13,6 +13,7 @@ public class ProdutoraConversor implements Converter<String, Produtora>{
 	@Autowired
 	private IProdutoraService service;
 	
+	@SuppressWarnings("null")
 	@Override
 	public Produtora convert(String text) {
 		

@@ -7,6 +7,7 @@ import org.springframework.core.convert.converter.Converter;
 public class BigDecimalConversor implements Converter<String, BigDecimal> {
 
 	@Override
+	@SuppressWarnings("null")
 	public BigDecimal convert(String text) {
 
 		if (text.isEmpty()) {
